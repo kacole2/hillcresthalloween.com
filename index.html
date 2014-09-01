@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Halloween on Hillcrest | hillcresthalloween.com</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500|Cinzel:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          speed: 500,
+          auto: true,
+          autoHover: true,
+        });
+        
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+          if ($("nav#nav-mobile ul").hasClass("expanded")) {
+              $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+              $(this).removeClass("open");
+          } else {
+              $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+              $(this).addClass("open");
+          }
+        });
+      });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+      <div class="nav-back">
+        <a href="index.html"><img src="img/logo.png" alt="logo.png"></a>
+        <nav id="nav-main">
+          <ul>
+            <li><a href="trickortreat.html">Trick-or-Treat</a></li>
+            <li><a href="hillcrestselfie.html">#HillcrestSelfie</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="news.html">News & Headlines</a></li>
+            <li><a href="pictures.html">Pictures & Video</a></li>
+          </ul>  
+        </nav>
+          <div id="nav-trigger">
+            <span>Menu</span>
+          </div>
+          <nav id="nav-mobile">  
+        </nav>
+      </div>
+    <div class="homebase homepage">
+          <div class="bxslider">
+              <div>
+                <div class="wrapper">
+                  <div class="text_box introtext">
+                    <center>
+                      <h1>Trick-or-Treating Schedule<h1>
+                      <p>Friday October 31st, 2014 from 5pm to 9pm. Rain or Shine, the zombies will still be fine.<p>
+                      <p>Visitors, please be respectful of all the hard work that goes into this night. Be safe and kind to one another. 
+                      And have fun!<p>
+                      <p>For more information on <a href="trickortreat.html">trick-or-treating</a>, please read <a href="trickortreat.html">here</a>.
+                    </center>
+                  </div>
+                  <div class="google-maps">
+                    <iframe width="500" height="375" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Hillcrest%20Avenue%2C%20Louisville%2C%20KY%2C%20United%20States&key=AIzaSyBTFz4f5LWCf875HZplC7xAnkFLKHTNlmM"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="wrapper">
+                    <div class="slide2">
+                      <img src="img/twitter_logo.png" alt="twitter logo" style="float: left;"><img src="img/instagram-logo.png" alt="instagram logo" style="float: right;">
+                    
+                    <br>
+                      <div class="text_box">
+                          <h1>#HillcrestSelfie<h1>
+                          <p>Take a selfie of yourself on Hillcrest and post it to twitter or instagram with the hashtag <a href="hillcrestselfie.html">#HillcrestSelfie</a>
+                          <img src="img/skeleton_selfie_01.jpg" alt="skeleton selfie" style="width: 100%;">
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+    </div>
+  </body> 
+        <footer>
+          <a href="http://twitter.com/KendrickColeman">
+            <img src="img/twitter-wrap.png" alt="twitter logo" class="social-icon">
+          </a>
+          <a href="http://facebook.com/kendrickcoleman">
+            <img src="img/facebook-wrap.png" alt="facebook logo" class="social-icon">
+          </a>
+          <p>&copy; &sigma; 2014 Kendrick Coleman</p>
+        </footer>
+      </div>
+  </body>
+</html>
