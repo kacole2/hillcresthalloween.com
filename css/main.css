@@ -51,6 +51,7 @@ p {
 NAVIGATION BAR
 ***************************/
 .nav-back {
+  z-index: 3;
   width: 100%;
   position: fixed;
   padding-top: 15px;
@@ -183,7 +184,6 @@ nav#nav-mobile a:hover {
 
 /***************************
 FOOTER
-
 ***************************/
 footer{
   font-size: 1.1em;
@@ -210,7 +210,6 @@ footer a:hover {
 
 /***************************
 PAGE PORTFOLIO
-
 ***************************/
 
 .gallery {
@@ -267,11 +266,12 @@ BX-SLIDER
   padding: 10px;
   transition-duration: .5s;
   width: 100%;
+  border: solid 2px transparent;
 }
 
 .text_box:hover {
   background-color: rgba(232, 228, 228, 1);
-  border: solid 1px #A55723;
+  border: solid 2px #A55723;
 }
 
 /***************************
@@ -359,6 +359,9 @@ News & Headlines
   color: #000;
 }
 
+.news_box li:hover {
+  background-color: rgba(232, 228, 228, 1);
+}
 .news_box li:hover h2 a {
   color: #E45400;
 }
@@ -402,9 +405,80 @@ News & Headlines
   height: 100%;
 }
 
+/***************************
+Pictures
+***************************/
+.main-image img {
+  border: solid 2px #fff;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.main-image .caption {
+  display: block;
+  width: 75%;
+  bottom: 5px; /*if using padding in the caption, match here */
+  left: 0;
+  z-index: 2;
+  padding: 5px 0;
+  text-indent: 15px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  border-top-right-radius: 120px;
+  font-family: 'Maven Pro', serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.caption a {
+  color: #fff;
+  transition-duration: .5s;
+}
+
+.caption a:hover {
+  text-decoration: underline;
+}
+
+.thumbnails {
+  padding: 0;
+  list-style: none;
+}
+
+.thumbnails li{
+  float: left;
+}
+
+.thumbnails li img{
+  width: 100%;
+  border: solid 2px #fff;
+  transition-duration: .5s;
+}
+
+.thumbnails li img:hover{
+  border: solid 2px #A55723;
+}
+
+.thumbnails li:nth-child(5n+6) {
+    clear: left; 
+}
+
+.gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+.gallery li a p{
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7;
+}
+
 /************************
 PAGE ABOUT
-
 ***************************/
 .profile-photo{
   display: block;
@@ -434,6 +508,7 @@ PAGE CONTACT
   border-radius: 50%;
   background: white;
   transition-duration: .5s;
+  border: solid 10px transparent;
 }
 
 .social-icons img:hover {

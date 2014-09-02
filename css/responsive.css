@@ -43,6 +43,21 @@
     clear: left; 
   }
 
+  .main-image {
+    padding: 2% 2%;
+    width: 98%;
+  }
+
+  .thumbnails li{
+    width: 18%;
+    padding: 1%;
+  }
+
+  .main-image .caption {
+    position: relative;
+    margin-top: -8%;
+  }
+
   /***************************
   2-Column layout
   ***************************/
@@ -127,5 +142,25 @@
   }
   .news_box li:nth-child(4n+5) {
     clear: left; 
+  }
+
+  .main-image {
+    position: relative;
+    float: right;
+    width: 55%;
+  }
+
+  .thumbnails {
+    float: left;
+    width: 45%;
+  }
+  .thumbnails li{
+    width: 15%;
+    padding: 1%;
+  }
+
+  .main-image .caption {
+    position: absolute;
+    margin: 0;
   }
 }

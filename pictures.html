@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Halloween on Hillcrest | hillcresthalloween.com</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500|Cinzel:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simpleGal.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".thumbnails").simpleGal({
+          mainImage: '.placeholder'
+        });
+        
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+          if ($("nav#nav-mobile ul").hasClass("expanded")) {
+              $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+              $(this).removeClass("open");
+          } else {
+              $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+              $(this).addClass("open");
+          }
+        });
+      });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+      <div class="nav-back">
+        <a href="index.html"><img src="img/logo.png" alt="logo.png"></a>
+        <nav id="nav-main">
+          <ul>
+            <li><a href="trickortreat.html">Trick-or-Treat</a></li>
+            <li><a href="hillcrestselfie.html">#HillcrestSelfie</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="news.html">News & Headlines</a></li>
+            <li><a href="pictures.html">Pictures & Video</a></li>
+          </ul>  
+        </nav>
+          <div id="nav-trigger">
+            <span>Menu</span>
+          </div>
+          <nav id="nav-mobile">  
+        </nav>
+      </div>
+    <div class="homebase homepage">
+      <div class="wrapper">
+        <div class="main-image">
+            <img src="img/streetpics/01.jpg" alt="Placeholder" class="placeholder">
+            <div class="caption">Photographer: <a href="mailto:nolan@example.com?Subject=Hillcrest%20Halloween%20Photos" target="_top">Nolan Hulsey</a></div>
+        </div>
+          <ul class="thumbnails">
+            <li>
+              <a href="img/streetpics/01.jpg">
+                <img src="img/streetpics/01.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/02.jpg">
+                <img src="img/streetpics/02.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/03.jpg">
+                <img src="img/streetpics/03.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/04.jpg">
+                <img src="img/streetpics/04.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/05.jpg">
+                <img src="img/streetpics/05.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/06.jpg">
+                <img src="img/streetpics/06.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/07.jpg">
+                <img src="img/streetpics/07.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/08.jpg">
+                <img src="img/streetpics/08.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/09.jpg">
+                <img src="img/streetpics/09.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/10.jpg">
+                <img src="img/streetpics/10.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/11.jpg">
+                <img src="img/streetpics/11.jpg" alt="Thumbnail">
+              </a>
+            </li>
+            <li>
+              <a href="img/streetpics/12.jpg">
+                <img src="img/streetpics/12.jpg" alt="Thumbnail">
+              </a>
+            </li>
+
+          </ul>
+      </div>
+        <footer>
+          <a href="contact.html">Contact</a>
+          <p>&copy; 2014 Kendrick Coleman</p>
+        </footer>
+    </div>
+</html>
