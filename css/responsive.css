@@ -36,8 +36,12 @@
     width: 100%;
   }
 
-
-
+  .news_box li {
+    width: 47%;
+  }
+  .news_box li:nth-child(2n+3) {
+    clear: left; 
+  }
 
   /***************************
   2-Column layout
@@ -61,7 +65,7 @@
     width: 28.3333%;
   }
   
-  #gallery li:nth-child(4n) {
+  #gallery li:nth-child(3n) {
     clear: left; 
   }
     
@@ -116,5 +120,12 @@
   .google-maps {
     float: right;
     width: 45%;
+  }
+
+  .news_box li {
+    width: 23%;
+  }
+  .news_box li:nth-child(4n+5) {
+    clear: left; 
   }
 }

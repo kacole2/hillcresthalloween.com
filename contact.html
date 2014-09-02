@@ -2,51 +2,73 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kendrick Coleman | Yet another website</title>
+    <title>Halloween on Hillcrest | hillcresthalloween.com</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,400italic,700,700italic,800,800italic|Federant' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500|Cinzel:700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+          if ($("nav#nav-mobile ul").hasClass("expanded")) {
+              $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+              $(this).removeClass("open");
+          } else {
+              $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+              $(this).addClass("open");
+          }
+        });
+      });
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Kendrick Coleman</h1>
-        <h2>Yet another website</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="selected">Contact</a></li>
-        </ul>      
-      </nav>
-    </header>
-    
+    <div class="nav-back">
+        <a href="index.html"><img src="img/logo.png" alt="logo.png"></a>
+        <nav id="nav-main">
+          <ul>
+            <li><a href="trickortreat.html">Trick-or-Treat</a></li>
+            <li><a href="hillcrestselfie.html">#HillcrestSelfie</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="news.html">News & Headlines</a></li>
+            <li><a href="pictures.html">Pictures & Video</a></li>
+          </ul>  
+        </nav>
+          <div id="nav-trigger">
+            <span>Menu</span>
+          </div>
+          <nav id="nav-mobile">  
+        </nav>
+    </div>
+  <div class="homebase homepage">
     <div id="wrapper">
-      <section id="primary">
-        <h3>General Info</h3>
-        <p>If you have any questions or would like to get in contact with me, feel free to email me at kendrickcoleman [@] gmail [d0t] com</p>
-        <p>I'm not giving you my phone. Contact me over twitter or email.</p>
-      </section>
-      <section id="secondary">
-        <h3>Contact Deets</h3>
-          <ul class="contact-info">
-            <li class="phone"><a href="tel:555-5555">555-5555</a></li>
-            <li class="mail"><a href="mailto:kendrickcoleman@gmail.com">kendrickcoleman [@] gmail [d0t] com</a></li>
-            <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=KendrickColeman">@KendrickColeman</a></li>
-          </ul>
-      </section>
+      <div class="social-icons">
+        <center>
+          <a href="http://www.kendrickcoleman.com"><img src="img/contactlogo/rss.png"></a>
+          <a href="http://www.twitter.com/KendrickColeman"><img src="img/contactlogo/twitter.png"></a>
+          <a href="http://www.facebook.com/kendrickcoleman"><img src="img/contactlogo/facebook.png"></a>
+          <a href="http://www.github.com/kacole2"><img src="img/contactlogo/github.png"></a>
+        </center>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <footer>
-        <a href="http://twitter.com/KendrickColeman">
-          <img src="img/twitter-wrap.png" alt="twitter logo" class="social-icon">
-        </a>
-        <a href="http://facebook.com/kendrickcoleman">
-          <img src="img/facebook-wrap.png" alt="facebook logo" class="social-icon">
-        </a>
-        <p>&copy; &sigma; 2014 Kendrick Coleman</p>
+          <a href="contact.html">Contact</a>
+          <p>&copy; 2014 Kendrick Coleman</p>
       </footer>
     </div>
+  </div>
   </body>
 </html>
