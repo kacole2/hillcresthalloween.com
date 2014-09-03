@@ -27,6 +27,9 @@
  /*********************************
  NAVIGATION BAR FOR DESKTOP END
  *********************************/
+  .bx-wrapper {
+    margin: 5% 1% 5%;
+  }
 
   .introtext{
     width: 100%;
@@ -43,9 +46,21 @@
     clear: left; 
   }
 
+  .video_box li {
+    width: 95%;
+  }
+  .video_box li:nth-child(1n+2) {
+    clear: left; 
+  }
+
   .main-image {
     padding: 2% 2%;
     width: 98%;
+  }
+
+  .main-image img {
+    max-width: 100%;
+    position: relative;
   }
 
   .thumbnails li{
@@ -55,7 +70,7 @@
 
   .main-image .caption {
     position: relative;
-    margin-top: -8%;
+    width: 100%;
   }
 
   /***************************
@@ -126,6 +141,9 @@
  /*********************************
  NAVIGATION BAR FOR DESKTOP END
  *********************************/
+  .bx-wrapper {
+    margin: 5% 15% 5%;
+  }
 
   .introtext{
     float: left;
@@ -144,23 +162,28 @@
     clear: left; 
   }
 
-  .main-image {
-    position: relative;
+  .video_box li {
+    width: 31.333%;
+  }
+  .video_box li:nth-child(3n+4) {
+    clear: left; 
+  }
+  
+  .wrapper .main-image {
+    width: 50%;
     float: right;
-    width: 55%;
+    top: 18%;
+    right: 5%;
+    position: fixed;
   }
 
-  .thumbnails {
+  .wrapper .thumbnails {
     float: left;
-    width: 45%;
+    width: 50%;
   }
+
   .thumbnails li{
     width: 15%;
     padding: 1%;
-  }
-
-  .main-image .caption {
-    position: absolute;
-    margin: 0;
   }
 }

@@ -14,13 +14,11 @@
 /** RESET AND LAYOUT
 ===================================*/
 
+
 .bx-wrapper {
 	position: relative;
 	*zoom: 1;
-	/***** not needed *******
-	margin: 5% auto 5%;
 	padding: 0;
-	*************************/
 }
 
 .bx-wrapper img {
