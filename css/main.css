@@ -42,7 +42,7 @@ p {
 .wrapper {
   max-width: 100%;
   margin-left: auto;
-  margin-right: 2.5%;
+  margin-right: auto;
   padding: 5%;
 }
 
@@ -51,6 +51,7 @@ p {
 NAVIGATION BAR
 ***************************/
 .nav-back {
+  height: 100px; 
   z-index: 3;
   width: 100%;
   position: fixed;
@@ -69,6 +70,24 @@ NAVIGATION BAR
   background: linear-gradient(to bottom,  rgba(17,17,17,0.92) 0%,rgba(17,17,17,0.82) 30%,rgba(10,10,10,0.71) 60%,rgba(3,3,3,0.58) 87%,rgba(0,0,0,0.52) 99%,rgba(0,0,0,0) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb111111', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
+
+.nav-back a img{
+  float: left;
+  width: 260px;
+  height: 85px;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+
+nav#nav-main {
+  float: right;
+  width: 55%;
+}
+
+nav#nav-main li {
+  display: inline-block; 
+  margin: 5px 0px;
+ }
 
 nav#nav-main ul {
   list-style: none;
@@ -268,8 +287,8 @@ BX-SLIDER
   border-radius: 8px;
   padding: 10px;
   transition-duration: .5s;
-  width: 100%;
   border: solid 2px transparent;
+  max-width: 960px;
 }
 
 .text_box:hover {
@@ -280,6 +299,11 @@ BX-SLIDER
 /***************************
 SLIDE 1
 ***************************/
+.introtext{
+  float: left;
+  width: 50%;
+}
+
 .introtext p {
   text-align: left;
 }
@@ -290,6 +314,8 @@ SLIDE 1
   height: 0;
   overflow: hidden;
   margin-bottom: -100%;
+  float: right;
+  width: 45%;
 }
 
 /***************************
@@ -311,6 +337,12 @@ SLIDE 2
 /***************************
 Trick-or-Treat Page
 ***************************/
+.tot {
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .tot p {
   text-align: left;
   font-size: .55em;
@@ -339,6 +371,7 @@ News Headlines
 }
 
 .news_box li {
+  width: 23%;
   float: left;
   margin: 1%;
   border-radius: 8px;
@@ -399,6 +432,10 @@ News Headlines
   color: #E77917;
 }
 
+.news_box li:nth-child(4n+5) {
+    clear: left; 
+  }
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -416,22 +453,35 @@ News Headlines
 /***************************
 Pictures
 ***************************/
- .main-image .caption {
-   width: 100%; 
-   z-index: 2;
-   bottom: 0;
-   margin-top: -36px;
- }
+.wrapper .main-image {
+  width: 50%;
+  float: right;
+  top: 18%;
+  right: 5%;
+  position: fixed;
+}
 
- .main-image .caption span { 
-  color: white; 
-  font-family: 'Maven Pro', serif;
-  font-weight: 400;
-  font-size: .95em;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px; 
-  border-top-right-radius: 25px;
+.wrapper .thumbnails {
+  float: left;
+  width: 50%;
+} 
+
+.main-image .caption {
+ width: 100%; 
+ z-index: 2;
+ bottom: 0;
+ margin-top: -36px;
+}
+
+.main-image .caption span { 
+color: white; 
+font-family: 'Maven Pro', serif;
+font-weight: 400;
+font-size: .95em;
+color: #fff;
+background: rgba(0, 0, 0, 0.5);
+padding: 10px; 
+border-top-right-radius: 25px;
 }
 
 .main-image img {
@@ -445,6 +495,8 @@ Pictures
 }
 
 .thumbnails li{
+  width: 15%;
+  padding: 1%;
   float: left;
   overflow: hidden;
 }
@@ -472,6 +524,7 @@ News Headlines
 }
 
 .video_box li {
+  width: 31.333%;
   float: left;
   margin: 1%;
   border-radius: 8px;
@@ -495,6 +548,10 @@ News Headlines
 }
 .video_box li:hover h1 a {
   color: #E45400;
+}
+
+.video_box li:nth-child(3n+4) {
+    clear: left; 
 }
 
 /************************

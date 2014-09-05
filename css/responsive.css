@@ -1,9 +1,9 @@
-@media screen and (max-width: 670px) {
+@media only screen and (max-width: 694px) {
  /*********************************
- NAVIGATION BAR FOR MOBILE BEGIN
+ NAVIGATION BAR FOR MOBILE
  *********************************/ 
   .wrapper {
-    padding: 15% 10%;
+    padding: 5%;
   }
 
   #nav-trigger {
@@ -18,14 +18,16 @@
     float: right;
   }
 
+  .nav-back {
+    height: 65px; 
+  }
   .nav-back a img{
-    float: left;
-    width: 30%;
-    margin-left: 5%;
+    width: 150px;
+    height: 50px;
   }
 
  /*********************************
- NAVIGATION BAR FOR DESKTOP END
+ Home Page 
  *********************************/
   .bx-wrapper {
     margin: 5% 1% 5%;
@@ -39,19 +41,44 @@
     width: 100%;
   }
 
+  .tot {
+    margin-top: 5%;
+    margin-left: -2.5%;
+  }
+/*********************************
+ News Headlines Page
+ *********************************/
   .news_box li {
     width: 47%;
   }
   .news_box li:nth-child(2n+3) {
     clear: left; 
   }
-
+ /*********************************
+ Video Page
+ *********************************/
   .video_box li {
     width: 95%;
   }
   .video_box li:nth-child(1n+2) {
     clear: left; 
   }
+ /*********************************
+ Pictures Page 
+ *********************************/
+  .wrapper .main-image {
+    width: 90%;
+    float: none;
+    top: 10%;
+    right: 3%;
+    position: absolute;
+  }
+
+  .wrapper .thumbnails {
+    margin-top: 85%;
+    float: none;
+    width: 100%;
+  } 
 
   .main-image {
     padding: 2% 2%;
@@ -107,83 +134,46 @@
     float: left;
     margin: 0 5% 80px 0;
   }
-  
-  
-  
+   
 }
 
-
-@media screen and (min-width: 671px) {
- /*********************************
- NAVIGATION BAR FOR DESKTOP BEGIN
- *********************************/
-  .nav-back {
-    height: 12%; 
-  }
-  
-  .nav-back a img{
-    float: left;
-    width: 18%;
-    margin-left: 5%;
+@media print {
+  .nav-back, 
+  #nav-main, 
+  footer,
+  nav#nav-main {
+    display: none;
   }
 
-  #nav-main {
-    margin-right: 5%;
-    float: right;
-    text-align: right;
-    width: 72%;
-  }
-
-  #nav-main li {
-    display: inline-block; 
-    margin: 5px;
-   }
- /*********************************
- NAVIGATION BAR FOR DESKTOP END
- *********************************/
-  .bx-wrapper {
-    margin: 5% 15% 5%;
-  }
-
-  .introtext{
-    float: left;
-    width: 50%;
-  }
-
-  .google-maps {
-    float: right;
-    width: 45%;
+  .text_box p, p, h1, h2, .tot p {
+    color: #000 !important;
+    background: transparent;
   }
 
   .news_box li {
-    width: 23%;
-  }
-  .news_box li:nth-child(4n+5) {
-    clear: left; 
+    width: 45%;
   }
 
-  .video_box li {
-    width: 31.333%;
-  }
-  .video_box li:nth-child(3n+4) {
-    clear: left; 
-  }
-  
-  .wrapper .main-image {
-    width: 50%;
-    float: right;
-    top: 18%;
-    right: 5%;
-    position: fixed;
+  a[href^="http"]::after {
+    content: " [" attr(href)"]"
+    color: blue;
   }
 
-  .wrapper .thumbnails {
-    float: left;
-    width: 50%;
+  @page {
+    margin: .5cm;
   }
 
-  .thumbnails li{
-    width: 15%;
-    padding: 1%;
+  @page :first {
+    margin-top: 2cm;
+  }
+
+  h2, ul {
+    page-break-after: avoid;
+  }
+
+  p, ul {
+    orphans: 3;
+    widows: 3;
+    font-size: 11pt;
   }
 }
