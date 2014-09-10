@@ -14,27 +14,32 @@
 
   nav#nav-mobile {
     display: block; 
-    width: 40%
-    float: right;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .nav-back {
-    height: 65px; 
+    height: 55px; 
   }
   .nav-back a img{
-    width: 150px;
-    height: 50px;
+    width: 125px;
+    height: 40px;
   }
 
  /*********************************
  Home Page 
  *********************************/
   .bx-wrapper {
-    margin: 5% 1% 5%;
+    margin: 5%;
   }
 
-  .introtext{
-    width: 100%;
+  .bxslider .wrapper .halfbox{
+    width: 92%;
+  }
+
+  .text_box h1{
+    font-size: 1.5em;
   }
 
   .google-maps {

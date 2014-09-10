@@ -262,6 +262,7 @@ BACKGROUND
   padding: 50px 0px 100px;
   margin-top: -15px;
   background: no-repeat center center fixed;
+  background-size: cover; 
 }
 
 .homepage {
@@ -273,15 +274,6 @@ BACKGROUND
 /***************************
 BX-SLIDER
 ****************************/
-#slider1_container {
-  position: relative; 
-  left: 10%;
-  right: 10%; 
-  width: 80%;
-  height: 300px; 
-  margin-top: 0%;
-}
-
 .text_box {
   background-color: rgba(232, 228, 228, 0.8);
   border-radius: 8px;
@@ -299,7 +291,7 @@ BX-SLIDER
 /***************************
 SLIDE 1
 ***************************/
-.introtext{
+.bxslider .wrapper .halfbox{
   float: left;
   width: 50%;
 }
