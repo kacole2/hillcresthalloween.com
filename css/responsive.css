@@ -3,7 +3,7 @@
  NAVIGATION BAR FOR MOBILE
  *********************************/ 
   .wrapper {
-    padding: 5%;
+    padding: 7% 2.5%;
   }
 
   #nav-trigger {
@@ -54,9 +54,9 @@
  News Headlines Page
  *********************************/
   .news_box li {
-    width: 47%;
+    width: 98%;
   }
-  .news_box li:nth-child(2n+3) {
+  .news_box li:nth-child(1n+2) {
     clear: left; 
   }
  /*********************************
@@ -72,27 +72,25 @@
  Pictures Page 
  *********************************/
   .wrapper .main-image {
-    width: 90%;
+    width: 100%;
     float: none;
-    top: 10%;
-    right: 3%;
-    position: absolute;
+    position: relative;
+    padding-bottom: 1%;
+    right: 0;
   }
 
   .wrapper .thumbnails {
-    margin-top: 85%;
     float: none;
     width: 100%;
   } 
 
   .main-image {
-    padding: 2% 2%;
-    width: 98%;
+    width: 100%;
   }
 
   .main-image img {
-    max-width: 100%;
     position: relative;
+    max-height: 100%;
   }
 
   .thumbnails li{
