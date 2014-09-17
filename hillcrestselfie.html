@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500|Cinzel:700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
     <link rel="stylesheet" href="css/responsive.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.social.stream.wall.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.social.stream.1.5.4.min.js"></script>
     <script>
       $(document).ready(function(){
         $("#nav-mobile").html($("#nav-main").html());
@@ -20,6 +23,38 @@
               $(this).addClass("open");
           }
         });
+
+        $('#social-stream').dcSocialStream({
+          feeds: {
+            twitter: {
+              id: '#halloween',
+              images: 'large',
+              search: '#halloween',
+              retweets: false,
+              replies: false,
+              out: 'intro,text,user',
+            },
+            instagram: {
+              id: '#halloween',
+              accessToken: '',
+              redirectUrl: 'http://www.hillcresthalloween.com/hillcrestselfie.html',
+              clientId: '38a8bdfbda574c0f8154f16ba55c4194',
+              out: 'intro,thumb,user'
+            }
+          },
+
+          rotate: {
+            delay: 0
+          },
+          days: 1080,
+          limit: 1500,
+          twitterId: 'kendrickcoleman',
+          wall: true,
+          filter: true,
+          control: false,
+          max: 'days',
+        });
+
       });
     </script>
 
@@ -34,7 +69,6 @@
       ga('send', 'pageview');
     </script>
     <!-- Google Analytics Tracker END -->
-
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -58,22 +92,11 @@
     </header>
   <div class="homebase homepage">
     <div id="wrapper">
-      <div class="social-icons">
-        <center>
-          <a href="http://www.kendrickcoleman.com"><img src="img/contactlogo/rss.png"></a>
-          <a href="http://www.twitter.com/KendrickColeman"><img src="img/contactlogo/twitter.png"></a>
-          <a href="http://www.facebook.com/kendrickcoleman"><img src="img/contactlogo/facebook.png"></a>
-          <a href="http://www.github.com/kacole2"><img src="img/contactlogo/github.png"></a>
-        </center>
-      </div>
+
+      <div id="social-stream"></div>
+    
     </div>
   </body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
       <footer>
           <a href="contact.html">Contact</a>
