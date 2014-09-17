@@ -104,32 +104,19 @@
   }
 
   /***************************
-  2-Column layout
+  HillcrestSelfie
   ***************************/
-  #primary{
-    width: 50%;
-    float: left;
+  .dcsns-toolbar .filter {
+    margin: 45px 0 15px 110px;
   }
-  
-  #secondary{
-    width: 40%;
-    float: right;
-  }
-  
-  
-  /***************************
-  PAGE: PORTFOLIO 3-Column layout
-  ***************************/
 
-  #gallery li {
-    width: 28.3333%;
+  .dcsns-content {
+    width: 100%;
   }
-  
-  #gallery li:nth-child(3n) {
-    clear: left; 
+
+  .stream li {
+    width: 155px;
   }
-    
-  
   /***************************
   PAGE: ABOUT
   ***************************/
@@ -137,7 +124,7 @@
     float: left;
     margin: 0 5% 80px 0;
   }
-   
+
 }
 
 @media print {
