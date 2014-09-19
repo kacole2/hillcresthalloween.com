@@ -30,12 +30,15 @@
  /*********************************
  Home Page 
  *********************************/
+ .welcome li {
+    width: 98%;
+  }
   .bx-wrapper {
     margin: 5%;
   }
 
   .bxslider .wrapper .halfbox{
-    width: 92%;
+    width: 100%;
   }
 
   .text_box h1{
@@ -48,7 +51,13 @@
 
   .tot {
     margin-top: 5%;
-    margin-left: -2.5%;
+  }
+  .tot p {
+    font-size: .89em;
+  }
+
+  .tot ul {
+    font-size: .92em;
   }
 /*********************************
  News Headlines Page
@@ -106,8 +115,13 @@
   /***************************
   HillcrestSelfie
   ***************************/
+  .selfietext {
+    margin-top: 0; 
+    width: 98%;
+  }
+
   .dcsns-toolbar .filter {
-    margin: 45px 0 15px 110px;
+    margin: 2px 0 15px 110px;
   }
 
   .dcsns-content {
@@ -115,7 +129,7 @@
   }
 
   .stream li {
-    width: 155px;
+    width: 148px;
   }
   /***************************
   PAGE: ABOUT

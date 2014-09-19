@@ -32,11 +32,15 @@ h1 {
   text-align: center;
 }
 
-p {
+h2, p {
   font-family: 'Maven Pro', serif;
   font-weight: 400;
   font-size: 0.75em;
   color: #E45400;
+}
+
+h2 {
+  font-size: 1.5em;
 }
 
 .wrapper {
@@ -81,7 +85,7 @@ NAVIGATION BAR
 
 nav#nav-main {
   float: right;
-  width: 55%;
+  width: 60%;
 }
 
 nav#nav-main li {
@@ -96,7 +100,7 @@ nav#nav-main ul {
 nav#nav-main li a{
   font-family: 'Cinzel', serif;
   font-weight: 400;
-  font-size: 1.15em;
+  font-size: 1.25em;
   color: #E77917;
   text-decoration: none;
   border-radius: 8px;
@@ -111,7 +115,7 @@ nav#nav-main a:visited {
 }
 
 nav#nav-main a:hover{
-  color: #F0691B;
+  color: #000;
   background-color: rgba(232, 228, 228, 0.9);
   /*border: solid 1px #E77917;*/
   border-bottom: solid 7px #E77917;
@@ -163,7 +167,7 @@ nav#nav-mobile ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: rgba(232, 228, 228, 0.9);
+  background-color: rgba(232, 228, 228, 0.98);
   padding: .15em;
   border-radius: 8px;
   transition-duration: .5s; 
@@ -231,31 +235,6 @@ footer a:hover {
 }
 
 /***************************
-PAGE PORTFOLIO
-***************************/
-
-.gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.gallery li {
-  float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
-}
-
-.gallery li a p{
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7;
-}
-
-/***************************
 BACKGROUND
 ****************************/
 .homebase {
@@ -275,12 +254,11 @@ BACKGROUND
 BX-SLIDER
 ****************************/
 .text_box {
-  background-color: rgba(232, 228, 228, 0.8);
-  border-radius: 8px;
-  padding: 10px;
+  background-color: rgba(232, 228, 228, 0.9);
+  border-radius: 2px;
   transition-duration: .5s;
   border: solid 2px transparent;
-  max-width: 960px;
+  max-width: 100%;
 }
 
 .text_box:hover {
@@ -290,6 +268,21 @@ BX-SLIDER
 
 /***************************
 SLIDE 1
+***************************/
+.welcome li {
+  width: 32.5%;
+  padding: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  float: left
+}
+.welcome ul {
+  list-style: none;
+  padding: 0;
+}
+
+/***************************
+SLIDE 2
 ***************************/
 .bxslider .wrapper .halfbox{
   float: left;
@@ -311,7 +304,7 @@ SLIDE 1
 }
 
 /***************************
-SLIDE 2
+SLIDE 3
 ***************************/
 .slide2 {
   width: 100%;
@@ -343,7 +336,7 @@ Trick-or-Treat Page
 
 .tot ul {
   text-align: left;
-  font-size: .55em;
+  font-size: .60em;
   margin: 2%;
 }
 
@@ -367,7 +360,7 @@ News Headlines
   float: left;
   margin: 1%;
   border-radius: 8px;
-  background-color: rgba(232, 228, 228, 0.8);
+  background-color: rgba(232, 228, 228, 0.9);
   transition-duration: .5s;
 }
 
@@ -465,8 +458,7 @@ Pictures
  margin-top: -36px;
 }
 
-.main-image .caption span { 
-color: white; 
+.main-image .caption a { 
 font-family: 'Maven Pro', serif;
 font-weight: 400;
 font-size: .95em;
@@ -474,6 +466,11 @@ color: #fff;
 background: rgba(0, 0, 0, 0.5);
 padding: 12px; 
 border-top-right-radius: 25px;
+}
+
+.main-image .caption a:hover { 
+color: #E77917;
+font-size: .97em;
 }
 
 .main-image img {
@@ -522,7 +519,7 @@ News Headlines
   float: left;
   margin: 1%;
   border-radius: 8px;
-  background-color: rgba(232, 228, 228, 0.8);
+  background-color: rgba(232, 228, 228, 0.9);
   transition-duration: .5s;
 }
 
@@ -548,21 +545,29 @@ News Headlines
     clear: left; 
 }
 
-/************************
-PAGE ABOUT
+/***************************
+Selfie Text Box at top
 ***************************/
-.profile-photo{
-  display: block;
-  max-width:200px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
+ .selfietext {
+   margin-top: 1%; 
+   text-align: center;
+   font-size: 1.25em;
+   background-color: rgba(232, 228, 228, 0.9);
+   border-radius: 4px;
+   transition-duration: .5s;
+   border: solid 2px transparent;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: 'Maven Pro', serif;
+   font-weight: 400;
+   color: #E45400;
+   padding: 5px;
 }
 
-.images-about {
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0 30px;
-  max-width: 100px
+.selfietext:hover {
+  background-color: rgba(232, 228, 228, 1);
+  border: solid 2px #A55723;
 }
 
 /***************************
@@ -570,6 +575,7 @@ PAGE CONTACT
 ***************************/
 .social-icons {
   margin-top: 10%;
+  width: 90%;
 }
 
 .social-icons img {

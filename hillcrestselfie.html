@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
   <head>
     <meta charset="utf-8">
     <title>Halloween on Hillcrest | hillcresthalloween.com</title>
@@ -27,15 +26,15 @@
         $('#social-stream').dcSocialStream({
           feeds: {
             twitter: {
-              id: '#halloween',
+              id: '#hillcrestselfie',
               images: 'large',
-              search: '#halloween',
+              search: '#hillcrestselfie',
               retweets: false,
               replies: false,
               out: 'intro,text,user',
             },
             instagram: {
-              id: '#halloween',
+              id: '#hillcrestselfie',
               accessToken: '',
               redirectUrl: 'http://www.hillcresthalloween.com/hillcrestselfie.html',
               clientId: '38a8bdfbda574c0f8154f16ba55c4194',
@@ -91,8 +90,11 @@
         </nav>
     </header>
   <div class="homebase homepage">
-    <div id="wrapper">
-
+    <div class="wrapper">
+      <div class="text_box selfietext">
+        Post your selfie to Instagram or Twitter with hashtag <strong>#HillcrestSelfie</strong>
+      </div>
+      
       <div id="social-stream"></div>
     
     </div>
