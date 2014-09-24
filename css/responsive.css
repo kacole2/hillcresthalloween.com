@@ -23,15 +23,16 @@
     height: 55px; 
   }
   .nav-back a img{
-    width: 150px;
-    height: 70px;
+    width: 140px;
+    height: 65px;
   }
 
  /*********************************
  Home Page 
  *********************************/
  .welcome li {
-    width: 48%;
+    width: 98%;
+    padding-bottom: 5px;
   }
   .bx-wrapper {
     margin: 5%;
