@@ -132,6 +132,10 @@
   .stream li {
     width: 148px;
   }
+
+  .stream li .section-intro {
+    font-size: 8px;
+  }
   /***************************
   PAGE: ABOUT
   ***************************/
