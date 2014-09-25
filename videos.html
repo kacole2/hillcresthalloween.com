@@ -8,35 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-    
-    <!-- Mobile Navigation Bar -->
-    <script>
-      $(document).ready(function(){
-        $("#nav-mobile").html($("#nav-main").html());
-        $("#nav-trigger span").click(function(){
-          if ($("nav#nav-mobile ul").hasClass("expanded")) {
-              $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-              $(this).removeClass("open");
-          } else {
-              $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-              $(this).addClass("open");
-          }
-        });
-      });
-    </script>
-
-    <!-- Google Analytics Tracker START -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-54650418-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <!-- Google Analytics Tracker END -->
-
+    <script type="text/javascript" src="js/main.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
