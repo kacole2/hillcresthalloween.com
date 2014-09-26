@@ -10,8 +10,6 @@
 
 //Mobile Navbar
 $(document).ready(function(){
-  $('#header').load('header.html');
-
   $("#nav-mobile").html($("#nav-main").html());
 
   $("#nav-trigger span").click(function(){
@@ -23,6 +21,4 @@ $(document).ready(function(){
         $(this).addClass("open");
     }
   });
-
-  $('#footer').load('footer.html');
 });
