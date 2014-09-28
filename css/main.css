@@ -437,26 +437,28 @@ Pictures
   width: 50%;
 } 
 
-.main-image .caption {
- width: 100%; 
- z-index: 2;
- bottom: 0;
- margin-top: -36px;
+.main-image .caption { 
+ z-index: 5;
+ margin-top: -63px;
+ display: block;
+ background: rgba(0, 0, 0, 0.4); 
+ position: relative;
+ left: 1px;
+}
+
+.main-image .caption p {
+  color: #fff;
+  padding: 10px 0px;
+  margin-left: 10px;
 }
 
 .main-image .caption a { 
-font-family: 'Maven Pro', serif;
-font-weight: 400;
-font-size: .95em;
-color: #fff;
-background: rgba(0, 0, 0, 0.5);
-padding: 12px; 
-border-top-right-radius: 25px;
+  color: #fff;
 }
 
 .main-image .caption a:hover { 
-color: #E77917;
-font-size: .97em;
+  color: #E77917;
+  font-size: 1.01em;
 }
 
 .main-image img {
