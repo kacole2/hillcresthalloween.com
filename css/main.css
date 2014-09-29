@@ -456,7 +456,7 @@ Pictures
   color: #fff;
 }
 
-.main-image .caption a:hover { 
+.main-image .caption:hover a { 
   color: #E77917;
   font-size: 1.01em;
 }
