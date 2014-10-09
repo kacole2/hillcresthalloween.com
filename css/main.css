@@ -81,7 +81,7 @@ NAVIGATION BAR
 .nav-back a img{
   float: left;
   width: 260px;
-  height: 125px;
+  height: 90px;
   margin-left: 5%;
   margin-top: 5px;
 }
@@ -288,7 +288,7 @@ SLIDE 2
 ***************************/
 .bxslider .wrapper .halfbox{
   float: left;
-  width: 50%;
+  width: 49%;
 }
 
 .introtext p {
