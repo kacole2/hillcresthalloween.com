@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1270px) {
+  nav#nav-main ul {
+      margin-top: 12px;
+    }
+  }
+
 @media only screen and (max-width: 694px) {
  /*********************************
  NAVIGATION BAR FOR MOBILE
@@ -140,12 +146,6 @@
   }
 
 }
-
-@media only screen and (max-width: 1270px) {
-  nav#nav-main ul {
-      margin-top: 12px;
-    }
-  }
 
 @media print {
   .nav-back, 
