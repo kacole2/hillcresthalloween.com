@@ -77,9 +77,16 @@
 	color: #fff;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 8px;
+	font-size: 10px;
 	z-index: 2;
 }
+
+/* REMOVE THE TIME STAMP
+.stream li .section-intro span{
+    visibility: hidden;
+}
+*/
+
 .stream li .clear {
 	clear: both;
 }
